@@ -21,7 +21,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
-            android:text="@string/app_name"
+            android:text="unforgotten experiencies"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="35dp"
@@ -50,6 +50,13 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/ventana2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|end"
+            android:text="next" />
     </LinearLayout>
 
 </ScrollView>
