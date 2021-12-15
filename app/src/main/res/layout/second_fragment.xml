@@ -51,18 +51,19 @@
                 android:inputType="text"
                 android:maxLines="1"/>
         </com.google.android.material.textfield.TextInputLayout>
-
+        
         <GridView
-            android:id="@+id/grid_view_imagenes"
+            android:id="@+id/grid_view_images"
             android:layout_width="match_parent"
             android:layout_height="700dp"
             android:columnWidth="90dp"
             android:gravity="center"
             android:horizontalSpacing="10dp"
-            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:numColumns="4"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="10dp"></GridView>
-
+            >
+        </GridView>
     </LinearLayout>
 
 </ScrollView>

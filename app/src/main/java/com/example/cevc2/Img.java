@@ -3,44 +3,43 @@ package com.example.cevc2;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-public class Img  extends BaseAdapter {
+public class Img extends BaseAdapter {
 
-    private Context context;
-    public int[] imgs = {
+    private Context mContext;
+    public int[] imagesArray = {
             R.drawable.boat1,
             R.drawable.boat2,
             R.drawable.boat3,
-
+            R.drawable.boat4
     };
 
-    public Img(Context context) {
-        this.context = context;
+    public Img(Context mContext) {
+        this.mContext = mContext;
     }
 
     @Override
     public int getCount() {
-        return imgs.length;
+        return imagesArray.length;
     }
 
     @Override
-    public Object getItem(int position) {
-        return imgs[position];
+    public Object getItem(int i) {
+        return imagesArray[i];
     }
 
     @Override
-    public long getItemId(int position) {
+    public long getItemId(int i) {
         return 0;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView imageView = new ImageView(context);
-        imageView.setImageResource(imgs[position]);
+    public View getView(int i, View convertView, ViewGroup viewGroup) {
+        ImageView imageView = new ImageView(mContext);
+        imageView.setImageResource(imagesArray[i]);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setLayoutParams(
                 new GridView.LayoutParams(
