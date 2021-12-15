@@ -14,7 +14,9 @@ public class Img extends BaseAdapter {
             R.drawable.boat1,
             R.drawable.boat2,
             R.drawable.boat3,
-            R.drawable.boat4
+            R.drawable.boat4,
+            R.drawable.boat5,
+            R.drawable.boat6
     };
 
     public Img(Context mContext) {
