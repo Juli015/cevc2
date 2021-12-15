@@ -45,8 +45,8 @@ public class Img extends BaseAdapter {
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setLayoutParams(
                 new GridView.LayoutParams(
-                        340,
-                        350
+                        300,
+                        320
                 ));
 
         return imageView;
