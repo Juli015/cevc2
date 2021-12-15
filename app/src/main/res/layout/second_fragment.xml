@@ -20,57 +20,48 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
-            android:text="Hello Jessica"
+            android:text="Hello Julio"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="35dp"
-            android:textStyle="bold|normal"
-            />
+            android:textStyle="bold|normal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:text="How are you feeeling today?"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="15dp"
+            android:textSize="14dp"
             android:textStyle="bold|normal" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            app:endIconMode="clear_text"
+            android:hint="@string/search"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/boat1" />
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/boat1" />
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/boat1"
-            />
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/boat1"
-            />
+        <GridView
+            android:id="@+id/grid_view_imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"></GridView>
 
     </LinearLayout>
 
